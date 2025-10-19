@@ -35,9 +35,17 @@
                     <h1>HOSPITAL MANAGEMENT SYSTEM</h1>
                     <h4>Welcome Back! Please login to your account</h4>
                 </div>
-                <div class="login-form-area"> <div class="input-group">
+                <div class="login-form-area"> 
+                    <div class="role-toggle">
+                        <button type="button" class="role-btn active" data-role="patient">Patient</button>
+                        <button type="button" class="role-btn" data-role="doctor">Doctor</button>
+                        <button type="button" class="role-btn" data-role="admin">Admin</button>
+                    </div>
+
+                    <div class="input-group">
                         <i class="fas fa-user input-icon"></i>
-                        <input type="text" id="patientId" name="patientId" required placeholder="Patient ID">
+                        <!-- <input type="text" id="patientId" name="patientId" required placeholder="Patient ID"> -->
+                         <input type="text" id="loginId" name="loginId" required placeholder="Patient ID">
                     </div>
                     <div class="input-group">
                         <i class="fas fa-lock input-icon"></i>
@@ -63,11 +71,12 @@
                 </div> <div class="m_right_down_signup">
                     <h5 class="account_text">Don't have an account ?</h5>
                     <a href="#">Sign Up</a>
-                    <a href="#">Doctor Login</a>
-                    <a href="#">Admin Login</a>
+                    <!-- <a href="#">Doctor Login</a> -->
+                    <!-- <a href="#">Admin Login</a> -->
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

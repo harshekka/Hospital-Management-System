@@ -310,6 +310,36 @@ header {
     text-decoration: underline;
 }
 
+/* Toggle button styling ----------*/
+
+.role-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.role-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #1C87DD;
+  background-color: white;
+  color: #1C87DD;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-btn:hover {
+  background-color: #e6f3ff;
+}
+
+.role-btn.active {
+  background-color: #1C87DD;
+  color: white;
+}
+
+
 /* Remove unused or redundant styles from original CSS */
 /* .m_right_down { ... removed, handled by input-group directly ... } */
 /* .m_right_down_chekbox label { ... moved to .remember-forgot-group ... } */
