@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Hospital Management System</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="./Images/logo.png" alt="Hospital Logo"></a>
+        </div>
+        <div class="header_menu">
+            <a href=""><div class="Home">Home</div></a>
+            <a href=""><div class="About_us">About Us</div></a>
+            <a href=""><div class="Contact_us">Contact Us</div></a>
+        </div>
+    </header>
+    <div class="main-wrapper"> <div class="main">
+            <div class="m_left">
+                <div class="m_left_top">
+                    <img src="./Images/main_pic.png" alt="Health Connect Background">
+                </div>
+                <div class="m_left_down">
+                    <h1>HEALTH-CONNECT</h1>
+                    <h3>HOSPITAL NETWORK</h3>
+                </div>
+            </div>
+            <div class="m_right">
+                <div class="m_right_top">
+                    <img src="./Images/logo.png" alt="Hospital Logo">
+                    <h1>HOSPITAL MANAGEMENT SYSTEM</h1>
+                    <h4>Welcome Back! Please login to your account</h4>
+                </div>
+                <div class="login-form-area"> <div class="input-group">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="patientId" name="patientId" required placeholder="Patient ID">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="password" name="password" required placeholder="Password">
+                    </div>
+
+                    <div class="m_right_down_options">
+                        <div class="remember-forgot-group">
+                            <div class="m_right_down_chekbox">
+                                <input type="checkbox" id="rememberMe" name="rememberMe" />
+                                <label for="rememberMe">Remember me</label>
+                            </div>
+                            <div class="m_left_down_forgot">
+                                <a href="#">
+                                    <h5>Forgot Password ?</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m_right_down_submit">
+                            <button type="submit">Login</button>
+                        </div>
+                    </div>
+                </div> <div class="m_right_down_signup">
+                    <h5 class="account_text">Don't have an account ?</h5>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Doctor Login</a>
+                    <a href="#">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
