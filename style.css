@@ -425,14 +425,20 @@ header {
 .m_left {
     display: none;
 }
+/* .main {
+    width: 90%; 
+    min-height: 81dvh;
+    height: auto;
+} */
+
 .main {
-    width: 90%; /* Fluid width */
-    /* max-width: 1200px; 
-    min-width: 800px;  */
-    height: 81vh;
-    /* border: 1px solid black;  */
-    /* margin: 1vh 0 0 0; */
+  width: 90%;
+  height: 87dvh;
+  /* padding-bottom: env(safe-area-inset-bottom);  */
+  /* box-sizing: border-box; */
+  /* overflow-y: auto; */
 }
+
 
 .main-wrapper{
     padding-top: 5vh;
