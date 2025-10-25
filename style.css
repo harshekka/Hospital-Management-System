@@ -186,12 +186,14 @@ header {
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem; /* Spacing below top content */
+    /* border: 1px solid black; */
 }
 
 .m_right_top img {
     width: clamp(50px, 8vw, 80px); /* Fluid width for logo */
     height: auto;
     margin-bottom: 1rem;
+    /* border: 1px solid black; */
 }
 
 .m_right_top h1 {
@@ -384,6 +386,9 @@ header {
   color: white;
 }
 
+.menu-icon{
+    display: none; 
+}
 
 /* Remove unused or redundant styles from original CSS */
 /* .m_right_down { ... removed, handled by input-group directly ... } */
@@ -393,5 +398,60 @@ header {
 
 
 @media (max-width: 932px) {
-  
+
+.m_left {
+    display: none;
+}
+.main {
+    width: 90%; /* Fluid width */
+    /* max-width: 1200px; 
+    min-width: 800px;  */
+    height: 81vh;
+    /* border: 1px solid black;  */
+    /* margin: 1vh 0 0 0; */
+}
+
+.main-wrapper{
+    padding-top: 5vh;
+}
+
+.header_menu{
+    display: none;
+}
+
+.m_right_top img {
+    width: 5rem;
+    height: auto;
+}
+
+.logo img {
+  height: 6vh;
+  width: auto;
+  /* border: 1px solid black; */
+}
+
+header {
+    height: 7vh; /* Use viewport height for header to scale */
+}
+
+.menu-icon{
+    display: contents;
+    /* border: 1px solid black; */
+}
+
+.menu-icon i {
+  margin-right: 3%;
+  /* height: 9vh; */
+   font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+header{
+    justify-content: space-between;
+}
+
+
+
 }
