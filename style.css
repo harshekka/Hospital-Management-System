@@ -11,7 +11,8 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #F3FBF5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Open Sans", sans-serif;
     display: flex; /* Make body a flex container to center main-wrapper */
     justify-content: center;
     align-items: center;
@@ -46,18 +47,22 @@ header {
   height: 8vh;
   width: auto;
   display: block;
+  margin-right: 50%;
+  /* border: 1px solid red; */
 }
 
 .header_menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     /* border: 1px solid black; */
-    width: 50%;
+    width: 25%;
     height: 100%;
-    /* margin: 0 0 0 5vw; */
-    font-size: clamp(1.2rem, 2vw, 1.8rem); /* Fluid font size */
-    font-weight: 600;
+    margin: 0 0 0 2.5vw;
+    /* font-size: clamp(1.2rem, 2vw, 1.8rem);  */
+    font-size: 1.2rem;
+    font-weight: 595;
+    font-style: normal;
     color: #2c3e50;
 }
 
@@ -75,15 +80,18 @@ header {
     align-items: center;
     /* This padding accounts for the absolute header's height */
     padding-top: 10vh; /* Push main content down below the header */
-    min-height: 100vh; /* Ensure wrapper covers full height */
+    min-height: 90vh; /* Ensure wrapper covers full height */
+    /* border: 1px solid black; */
 }
 
 
 /* Main Section - The two-column layout */
 .main {
     width: 90%; /* Fluid width */
-    max-width: 1200px; /* Maximum width for very large screens */
-    min-width: 800px; /* Minimum width before elements start to look too squished */
+    /* max-width: 1200px; 
+    min-width: 800px;  */
+    height: 86vh;
+    /* border: 1px solid black; */
     min-height: 65vh; /* Minimum height based on viewport height */
     background-color: #fff; /* White background for the main container */
     border-radius: 15px; /* Added based on image */
@@ -188,9 +196,10 @@ header {
 
 .m_right_top h1 {
     font-size: clamp(1.2rem, 2vw, 1.8rem); /* Fluid font size */
-    font-weight: 600;
+    font-weight: 580;
     color: #2c3e50;
     margin-bottom: 0.5rem;
+    
 }
 
 .m_right_top h4 {
@@ -203,11 +212,14 @@ header {
 /* Login Form Area */
 .login-form-area {
     width: 100%;
-    max-width: 350px; /* Limit form width */
+    height: 100%;
+    max-width: 350px; 
+    max-height:  500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem; /* Space between form sections */
+    /* border: 1px solid red; */
 }
 
 .input-group {
@@ -258,6 +270,9 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: clamp(0.75rem, 1.1vw, 0.9rem); /* Fluid font size */
+    /* border: 1px solid black; */
+    height: 3rem;
+    font-size: 1.02rem;
 }
 
 .m_right_down_chekbox {
@@ -266,12 +281,14 @@ header {
     gap: 0.5rem;
     color: #666;
     font-weight: 550;
+    
 }
 
 .m_right_down_chekbox input[type="checkbox"] {
     accent-color: #1C87DD;
     width: 1em; /* Make checkbox size relative to font */
     height: 1em;
+    
 }
 
 .m_left_down_forgot a {
@@ -312,7 +329,8 @@ header {
     display: flex;
     flex-direction: column; /* Stack signup links */
     gap: 0.5rem; /* Space between links */
-    font-size: clamp(0.8rem, 1.1vw, 0.95rem); /* Fluid font size */
+    /* font-size: clamp(0.8rem, 1.1vw, 0.95rem);  */
+    font-size:larger;
 }
 
 .m_right_down_signup .account_text {
@@ -335,10 +353,13 @@ header {
 /* Toggle button styling ----------*/
 
 .role-toggle {
+/* border: 1px solid black; */
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  width:100%;
+  height: 6.5vh;
 }
 
 .role-btn {
@@ -347,9 +368,11 @@ header {
   background-color: white;
   color: #1C87DD;
   font-weight: 600;
-  border-radius: 20px;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 40%;
+  font-size: medium;
 }
 
 .role-btn:hover {
@@ -367,3 +390,8 @@ header {
 /* .m_right_down_chekbox label { ... moved to .remember-forgot-group ... } */
 /* .m_right_down_signup a { ... specific styles moved to .m_right_down_signup a ... } */
 /* .specific_login, .specific_login1 { ... removed, use gap for spacing ... } */
+
+
+@media (max-width: 932px) {
+  
+}
